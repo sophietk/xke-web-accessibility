@@ -1,6 +1,6 @@
 /**** Header ****/
 
-.header {
+header {
     height: 75px;
     background: #468ed6; /* Old browsers */
     background: -moz-linear-gradient(top, #468ed6 0%, #356aa0 50%, #356fa8 100%); /* FF3.6+ */
@@ -46,7 +46,7 @@
 
 /**** Footer ****/
 
-.footer {
+footer {
     background-color: #333;
     position: fixed;
     width: 100%;
