@@ -26,6 +26,7 @@ header {
     height: 22px;
     display: inline-block;
     margin-bottom: -5px;
+    text-indent: -5000px;
 }
 
 .pager .prev {
