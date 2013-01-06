@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    background-color: #eee;
+    font-family: Verdana;
+    font-size: 13px;
+}
+
+.inner {
+    width: 980px;
+    margin: 0 auto;
+    padding: 10px;
+}
