@@ -1,0 +1,121 @@
+/**** Chat ****/
+
+.wrapper {
+    width: 801px;
+    height: 500px;
+    margin: 20px auto;
+    border: 1px solid #333;
+}
+
+.main {
+    float: left;
+    width: 600px;
+    height: 100%;
+}
+
+.discussion {
+    height: 360px;
+    padding: 20px;
+    overflow: scroll;
+}
+
+.discussion .name.Me {
+    color: #0094CF;
+}
+
+.discussion .name.Jack {
+    color: #999;
+}
+
+.discussion .name.Frank {
+    color: #51a541;
+}
+
+.discussion .name.Vlad {
+    color: #ea7d5c;
+}
+
+.discussion .name.Paul {
+    color: #bf74ca;
+}
+
+.message {
+    border-top: 1px dotted #999;
+    height: 100px;
+}
+
+.message textarea {
+    width: 450px;
+    height: 65px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.message button {
+    width: 103px;
+    height: 87px;
+    float: right;
+    margin: 5px;
+    border: none;
+    background: #00B6FF;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 8px 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 0 1px #0086ba inset, 0 0 0 2px #6cdcea inset, 0 30px 20px -18px rgba(255, 255, 255, 0.65) inset, 1px 1px 3px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 5px;
+    -webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0 0 1px #0086ba inset, 0 0 0 2px #6cdcea inset, 0 30px 20px -18px rgba(255, 255, 255, 0.65) inset, 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.message button:hover {
+    background-color: #0094CF;
+}
+
+.message button:active {
+    background-color: #666;
+}
+
+/**** Friends list ****/
+
+.friends {
+    float: right;
+    width: 200px;
+    height: 100%;
+    border-left: 1px solid #999;
+}
+
+.friends.closed {
+    width: 60px;
+}
+
+.friends a {
+    padding: 5px;
+    color: #999;
+}
+
+.friends ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.friends li {
+    padding: 15px;
+}
+
+.friends li:nth-child(odd) {
+    background-color: #ddd;
+}
+
+.friends li img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
