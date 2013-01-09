@@ -7,24 +7,21 @@ $(function () {
         $('#textMessage').val('');
     });
 
-    // Improve that using adapted list tags
-    // Indicate that a part of the block has changed : use aria-live & aria-atomic (http://www.w3.org/TR/wai-aria/states_and_properties#aria-live)
     var addMessage = function (name, message) {
-        $('#discussion').append('<p><span class="name ' + name + '">' + name + ' &gt;</span> ' + message + '</p>');
+        $('#discussion').append('<li><span class="name ' + name + '">' + name + ' &gt;</span> ' + message + '</li>');
         $('#discussion').scrollTop($('#discussion')[0].scrollHeight);
     };
 
-    // Indicate that this link is controlling another block : use aria-controls (http://www.w3.org/TR/wai-aria/states_and_properties#aria-controls)
     $('#friendsToggle').toggle(function () {
         $('#friendsList').hide();
-        // Indicate that this block is expanded/collapsed : use aria-expanded (http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded)
         $('#friendsWrapper').addClass('closed');
-        // Indicate that this link text is changing : use aria-live (http://www.w3.org/TR/wai-aria/states_and_properties#aria-live)
+        $('#friendsWrapper').attr('aria-expanded', 'false');
         $(this).text('Unmute');
         clearInterval(timer);
     }, function () {
         $('#friendsList').show();
         $('#friendsWrapper').removeClass('closed');
+        $('#friendsWrapper').attr('aria-expanded', 'true');
         $(this).text('Mute');
         timer = setInterval(letThemTalk, 2000);
     });

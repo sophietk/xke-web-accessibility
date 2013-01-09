@@ -13,14 +13,14 @@
 
 <div class="wrapper">
     <div class="main">
-        <div id="discussion" class="discussion"></div>
+        <ul id="discussion" class="discussion" aria-live="polite" aria-atomic="false"></ul>
         <div class="message">
             <textarea id="textMessage"></textarea>
             <button id="sendButton">Send</button>
         </div>
     </div>
-    <div id="friendsWrapper" class="friends">
-        <a id="friendsToggle" class="toggle" href="#">Mute</a>
+    <div id="friendsWrapper" class="friends" aria-expanded="true">
+        <a id="friendsToggle" class="toggle" href="#" aria-controls="friendsWrapper" aria-live="assertive">Mute</a>
         <ul id="friendsList">
             <li>
                 <img src="img/skellington.png" alt="Jack's avatar">
