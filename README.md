@@ -6,7 +6,7 @@ Required
 
 You can use node to start the server on port 4000.
 
-  node server.js
+    node server.js
 
 
 Exercise 1
