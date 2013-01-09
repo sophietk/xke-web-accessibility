@@ -14,8 +14,8 @@ Exercise 1
 
 Edit :
 
-* simple-page.html
-* simple-page.css
+* simple-page.html (contains instructions)
+* css/simple-page.css
 
 And improve :
 
@@ -31,8 +31,9 @@ Exercise 2
 
 Edit :
 
-* chat.js
+* js/chat.js (contains instructions)
 * chat.html
+* css/chat.css
 
 And help the user indicating that some parts of the page have changed.
 
